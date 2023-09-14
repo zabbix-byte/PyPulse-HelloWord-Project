@@ -19,7 +19,7 @@ Aplication.SetAplication('baseapp')
 # BROWSER SETTINGS
 APP_SETTINGS = {
     'title': 'PyPulse App',
-    'debug': True,
+    'debug': False,
     'debug_file_name': 'debug.log',
     'window_size_x': 1270,
     'window_size_y': 720,

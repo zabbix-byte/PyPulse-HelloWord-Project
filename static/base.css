@@ -131,3 +131,8 @@ nav li {
   left: 50px;
   position: fixed
 }
+
+a {
+  text-decoration: none;
+  color: var(--light-text);
+}
