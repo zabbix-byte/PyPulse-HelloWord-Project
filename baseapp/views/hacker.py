@@ -7,3 +7,4 @@ from baseapp.domain import User
 def hacker(request):
     user = User(type='Hacker')
     return RenderTemplate('home.html', {'user_type': user.type, 'path': '/'})
+                
