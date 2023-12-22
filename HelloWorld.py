@@ -3,20 +3,21 @@ import os
 from pypulse import Window, Aplication
 from pypulse.Template import Template
 
-# Defining aplication route
+# Specifying application Route
 Aplication.Vars.APLICATION_PATH = os.path.dirname(os.path.abspath(__file__))
 
-# Defining the templates and static files places
+# Defining the locations for templates and static files.
 Template.TEMPLATE_PATH = os.path.join(
     Aplication.Vars.APLICATION_PATH, 'templates')
 Template.STATIC_PATH = os.path.join(
     Aplication.Vars.APLICATION_PATH, 'static')
 
-# Setting Aplications
-# I you create a new aplication you need to add this here
+
+# Configuring applications
+# If you create a new application, make sure to include it here.
 Aplication.SetAplication('baseapp')
 
-# BROWSER SETTINGS
+# Application window settings
 APP_SETTINGS = {
     'title': 'PyPulse App',
     'debug': False,
@@ -27,5 +28,5 @@ APP_SETTINGS = {
         Aplication.Vars.APLICATION_PATH, 'window_logo.ico')
 }
 
-# Initializing Browser
+# Initializing window
 browser = Window.LoadBrowser(**APP_SETTINGS)
